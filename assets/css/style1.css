@@ -232,12 +232,6 @@ footer {
         background-repeat: no-repeat;
         background-position: center top;
     }
-    span {
-        
-        display: inherit;
-        position: absolute;
-        top: 300px;
-    }
 }
 /* <--Iphone 6 vertical optimization @375px--> */
 @media (min-width: 370px) and (max-width: 450px) {
@@ -435,12 +429,9 @@ footer {
     .name {
         text-align: center;
         width: 30%;
-        /* border: none; */
-        /* margin: 0px; */
     }
 
     header {
-        /* margin: 0px; */
         position: absolute;
         top: 0px;
     }
