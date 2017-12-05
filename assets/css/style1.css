@@ -1,0 +1,496 @@
+header {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff;
+    font-family: "Georgia";
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #cccccc;
+}
+
+.header {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.name {
+    background-color: #4aaaa5;
+    font-size: 150%;
+    font-family: "Georgia";
+    font-weight: bold;
+    color: #ffffff;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #ffffff;
+    float: left;
+    padding: 25px;
+}
+
+.nav {
+    font-size: 100%;
+    font-family: "Arial";
+    color: #777777;
+    float: right;
+    margin:30px 9px 0px 0px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-color: #cccccc;
+    padding-right:10px;
+    
+}
+
+.nav1 {
+    font-size: 100%;
+    font-family: "Arial";
+    color: #777777;
+    float: right;
+    margin: 30px 35px 0px 0px;    
+}
+
+a {
+    text-decoration: none;
+}
+
+h2{
+    font-size: 150%;
+    font-family: "Georgia";
+    font-weight: bold;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #dddddd;
+    padding: 0px 0px 10px 0px;
+    margin: 15px;
+}
+
+h3 {
+    font-size: 125%;
+    font-family: "Georgia";
+    font-weight: bold;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #dddddd;
+    padding: 0px 0px 10px 0px;
+    margin: 15px 15px 5px 15px;
+}
+
+h4 {
+    font-family: "Georgia";
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 15px;
+    text-align: center;
+}
+
+p {
+    margin: 8px 15px 15px 0px;
+    color: #777777;
+}
+
+.self {
+    height: auto;
+    width: 220px;
+    float: left;
+    margin: 0px 15px 15px 15px;
+}
+
+.sub-container {
+    height: auto;
+    width: 648px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    background-color: #ffffff;
+}
+
+.content-container{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    top: 101px;
+    margin-bottom: 85px;
+}
+
+.pimgs {
+    text-align: center;
+}
+
+.phc {
+    display: inline-block;
+    height: 200px;
+    width: 240px;
+    margin: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+}
+
+.ph {
+    position: relative;
+    top: -60px;
+
+}
+
+.phimg {
+    width: 100%;
+    height: 100%;   
+}
+
+form {
+    font-family: "Arial";
+    color: #777777;
+    margin: 15px 0px 0px 0px;
+    
+}
+
+.formarea {
+    margin: 15px;
+}
+
+.message {
+    height: 200px;
+}
+
+textarea {
+    margin: 3px 0px 10px 0px;
+    width: 99%; 
+}
+
+button {
+    font-family: "Arial";
+    font-size: 90%;
+    color: #ffffff;
+    margin: 15px 0px 0px 0px;
+    background-color: #4aaaa5;
+    border: none;
+    height: 35px;
+    width: 20%;
+}
+
+.connect {
+    background-color: #ffffff;
+    height: auto;
+    width: 268px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    margin: 1px;
+    text-align: center;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.connectimg {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+
+}
+
+.connectimg1 {
+    height: 40px;
+    width: 45px;
+    padding: 10px;
+
+}
+
+span {
+    display: none;
+}
+
+body {
+    background-image: url("../images/concrete.png")
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    background-color: #666666;
+    font-family: "arial";
+    font-size: 90%;
+    color: #ffffff;
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-color: #4aaaa5;
+}
+/* <--starting media queries--> */
+@media (min-width: 1px) and (max-width:369px) {
+    body {
+        display: none;
+        background-image: url("../images/crash.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    span {
+        
+        display: inherit;
+        position: absolute;
+        top: 300px;
+    }
+}
+/* <--Iphone 6 vertical optimization @375px--> */
+@media (min-width: 370px) and (max-width: 450px) {
+    .name {
+        text-align: center;
+        width: 90%;
+        border: none;
+        margin: 0px;
+        padding: 5%;
+    }
+    header {
+        margin: 0px;
+        position: absolute;
+        top: 0px;
+    }
+
+    .header {
+        width: 99%
+    } 
+    .nav, .nav1 {
+        text-align: center;
+    }
+
+    .nav1 {
+        margin-right: 20%;
+        margin-bottom: 25px;
+    }
+
+    span {
+        display: none;
+    }
+    
+    .content-container {
+        width: 99%;
+        position: relative;
+        top: 155px;
+    }
+    .sub-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p {
+        padding: 0px 12px 0px 12px;
+    }
+
+    .self {
+        width: 30%;
+    }
+
+    textarea {
+        margin: 0px;
+        padding:0px;
+    }
+    .connect {
+        width: 90%;
+        position: relative;
+        top: 10px;
+        margin:0 auto;
+    }
+    footer {
+        position: relative;
+        top: 88px;
+    }
+
+}
+
+/* <--Optimized for 640px width--> */
+@media (min-width: 451px) and (max-width: 700px) {
+    .name {
+        text-align: center;
+        width: 93%;
+        border: none;
+        margin: 0px;
+    }
+    header {
+        margin: 0px;
+        position: absolute;
+        top: 0px;
+        border: none;
+    }
+    .header {
+        width: 99%
+    } 
+    .nav, .nav1 {
+        text-align: center;
+    }
+
+    .nav1 {
+        margin-right: 32%;
+        margin-bottom: 25px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .content-container {
+        width: 99%;
+        position: relative;
+        top: 155px;
+    }
+    .sub-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p {
+        padding: 0px 12px 0px 12px;
+    }
+
+    .self {
+        width: 30%;
+    }
+
+    textarea {
+        margin: 3px 0px 0px 1px;
+        padding:0px;
+    }
+    .connect {
+        width: 90%;
+        position: relative;
+        top: 10px;
+        margin:0 auto;
+    }
+    footer {
+        position: relative;
+        top: 88px;
+    }
+}
+
+/* <--Optimized for 768px--> */
+@media (min-width: 700px) and (max-width: 850px) {
+    .name {
+        text-align: center;
+        width: 30%;
+    }
+
+    header {
+        position: absolute;
+        top: 0px;
+    }
+
+    .header {
+        width: 90%;
+    } 
+
+    .nav1 {
+        margin-bottom: 25px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .content-container {
+        width: 99%;
+        position: relative;
+        top: 110px;
+    }
+    .sub-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p {
+        padding: 0px 12px 0px 12px;
+    }
+
+    .self {
+        width: 30%;
+    }
+
+    textarea {
+        margin: 3px 0px 0px 1px;
+        padding:0px;
+    }
+
+    .connect {
+        width: 90%;
+        position: relative;
+        top: 10px;
+        margin:0 auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0px;
+    }
+
+}
+
+/* <--Optimized for 980px--> */
+@media (min-width: 851px) and (max-width: 1023px) {
+    .name {
+        text-align: center;
+        width: 30%;
+        /* border: none; */
+        /* margin: 0px; */
+    }
+
+    header {
+        /* margin: 0px; */
+        position: absolute;
+        top: 0px;
+    }
+
+    .header {
+        width: 90%;
+    } 
+
+    .nav1 {
+        margin-bottom: 25px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .content-container {
+        width: 99%;
+        position: relative;
+        top: 110px;
+    }
+
+    .sub-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p {
+        padding: 0px 12px 0px 12px;
+    }
+
+    .self {
+        width: 30%;
+    }
+
+    textarea {
+        margin: 3px 0px 0px 1px;
+        padding:0px;
+    }
+
+    .connect {
+        width: 90%;
+        position: relative;
+        top: 10px;
+        margin:0 auto;
+    }
+
+    footer {
+        position: relative;
+        top: 88px;
+    }
+
+}
